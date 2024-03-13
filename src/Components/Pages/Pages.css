@@ -1,0 +1,56 @@
+/* Home style */
+
+.home-span {
+    color: rgba(0, 0, 255, 0.488);
+    border-bottom: 2px solid rgba(0, 0, 255, 0.488);
+}
+
+.home-upper{
+    margin-bottom: 4rem;
+}
+
+.inner-home {
+    margin: 4rem;
+}
+
+.inner-home h6 {
+    font-size: 1.3rem;
+}
+
+.home-upper {
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box-continer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-img {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 210px;
+    height: 200px;
+    color: white;
+
+}
+
+.box p {
+    line-height: 1.3;
+    font-size: 9px;
+}
+
+
+
