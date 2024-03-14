@@ -2,14 +2,15 @@
     display: flex;
     justify-content: space-around;
     position: relative;
+    align-items: center;
 }
 
 .header-botoom {
     box-sizing: border-box;
     width: 100%;
     background-color: rgb(75, 48, 44);
-    transition: all .8s ease-in-out ;
-   
+    transition: all .8s ease-in-out;
+
 }
 
 .header-bottom-nav ul {
@@ -19,23 +20,25 @@
     align-items: center;
     text-align: center;
 }
-.header-bottom-nav a{
+
+.header-bottom-nav a {
     text-decoration: none;
     text-align: center;
-    display:inline-block; 
-    margin:0;
+    display: inline-block;
+    margin: 0;
     color: aliceblue;
 }
 
-.header-bottom-nav ul li{
-   /* padding: 12px 4px; */
-   margin: 0px 15px;
-}
-.header-bottom-nav ul li a:hover{
-   color: rgba(15, 10, 32, 0.788);
+.header-bottom-nav ul li {
+    /* padding: 12px 4px; */
+    margin: 0px 15px;
 }
 
-.header-top-right{
+.header-bottom-nav ul li a:hover {
+    color: rgba(15, 10, 32, 0.788);
+}
+
+.header-top-right {
     margin: 10px 5px;
 }
 
@@ -45,7 +48,8 @@
     justify-content: end;
 }
 
-.linke , .face{
+.linke,
+.face {
     color: black;
     margin: 10px 5px;
     scale: 1.2;
@@ -53,28 +57,29 @@
 
 .address {
     text-decoration: none;
-   color: black;
+    color: black;
 }
 
-.mail-icon{
+.mail-icon {
     scale: 1.4;
     margin: 0 8px;
 }
+
 .header-bottom-nav {
     display: flex;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.308);
     padding: 25px;
     backdrop-filter: blur(10px);
-    transition: all .4s ease-in-out ;
+    transition: all .4s ease-in-out;
 }
 
 .header-botoom {
-    background: url(../../assets//22.jpg);
+    background: url(../../assets//22.jpg) fixed;
     min-height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .menu-icon {
@@ -84,13 +89,13 @@
 /* hamberger */
 
 @media (max-width: 768px) {
-    .header-bottom-nav{
+    .header-bottom-nav {
         justify-content: flex-start;
     }
 
     .header-bottom-nav ul {
         display: none;
-    } 
+    }
 
     .menu-icon {
         display: block;
@@ -104,16 +109,27 @@
         padding: 25px;
         backdrop-filter: blur(10px);
     }
+
     .hamberger ul {
         list-style: none;
         padding: 12px 0;
     }
+
     .hamberger ul li {
         padding: 5px;
     }
+
     .hamberger ul li a {
         text-decoration: none;
         list-style: none;
         color: white;
+    }
+
+    .address {
+        font-size: 12px;
+    }
+
+    .ak-logo {
+        height: 45px;
     }
 }

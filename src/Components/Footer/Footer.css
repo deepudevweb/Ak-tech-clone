@@ -36,4 +36,9 @@
         flex: 0 0 auto;
         width: 32%;
     }
+
+    .mt-3 {
+        align-items: start !important;
+        padding: 0px 1rem;
+    }
 }

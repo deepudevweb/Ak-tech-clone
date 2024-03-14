@@ -5,7 +5,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 export default function Footer() {
     return (
         <MDBFooter bgColor='black' className='text-center text-lg-start text-muted'>
-         <section className='footer-section'>
+            <section className='footer-section'>
                 <MDBContainer className='text-center text-md-start'>
                     <MDBRow className='mt-3'>
                         <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 mt-5'>
@@ -21,8 +21,8 @@ export default function Footer() {
                                 </a>
                             </p>
                             <div className="social-link">
-                                <a href="#!" style={{ color: 'white', marginRight: '7px', padding: '8px 11px' , border: '1px solid white'  }}> <MDBIcon fab icon="facebook-f" /></a>
-                                <a href="#!" style={{ color: 'white', padding: '8px 9px' , border: '1px solid white'  }}> <MDBIcon fab icon="linkedin" /></a>  
+                                <a href="#!" style={{ color: 'white', marginRight: '7px', padding: '8px 11px', border: '1px solid white' }}> <MDBIcon fab icon="facebook-f" /></a>
+                                <a href="#!" style={{ color: 'white', padding: '8px 9px', border: '1px solid white' }}> <MDBIcon fab icon="linkedin" /></a>
                             </div>
                         </MDBCol>
 

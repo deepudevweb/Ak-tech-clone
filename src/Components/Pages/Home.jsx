@@ -43,7 +43,7 @@ function Home() {
                         </div>
                         <div className="box">
                             <img src={Phoneimg2} alt="" className='box-img' />
-                        </div>          
+                        </div>
                     </div>
                 </div>
             </div>

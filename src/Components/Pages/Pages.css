@@ -5,7 +5,7 @@
     border-bottom: 2px solid rgba(0, 0, 255, 0.488);
 }
 
-.home-upper{
+.home-upper {
     margin-bottom: 4rem;
 }
 
@@ -52,5 +52,261 @@
     font-size: 9px;
 }
 
+@media screen and (max-width: 768px) {
+    .box {
+        width: 300px;
+        height: 243px;
+        color: white;
+    }
+    .inner-home h6 {
+        font-size: 1.6rem;
+    }
+
+    .box p {
+        line-height: 1.3;
+        font-size: 14px;
+    }
+
+    .mt-3 {
+        align-items: start !important;
+        padding: 0 3rem;
+    }
+}
+
+/* introduction style */
+
+.intoduction {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.inner-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.mid-right img {
+    height: 300px;
+    width: auto;
+}
+
+.inner-mid {
+    display: flex;
+    gap : 3rem;
+}
+
+.intro-inner {
+    width: 65%;
+    margin: 4rem;
+}
+
+.intoduction-h1 {
+    color: black;
+    font-size: 3rem;
+}
+.intoduction-span {
+    color: #007cc3;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+    .inner-mid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mid-right img {
+        height: 180px;
+        width: auto;
+    }
+
+    .inner-top p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .intro-inner {
+        width: 90%;
+        margin: 1rem;
+    }
+}
 
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .intro-inner {
+        width: 85%;
+    }
+}
+
+/* Technical Capability */
+
+/* ProjectGovernance */
+
+@media screen and (max-width: 768px) {
+    .govimg {
+        height: 140px !important;
+        width: auto;
+    }
+
+    .project-h1 {
+        font-size: 1.8rem;
+    }
+    
+}
+
+/* Contact style */
+
+.contain {
+    background-color: #eee;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+  
+  div.form {
+    background-color: #eee;
+  }
+  .contact-wrapper {
+    margin: auto 0;
+  }
+  
+  .submit-btn {
+    float: left;
+  }
+  .reset-btn {
+    float: right;
+  }
+  
+  .form-headline:after {
+    content: "";
+    display: block;
+    width: 10%;
+    padding-top: 10px;
+    border-bottom: 3px solid #ec1c24;
+  }
+  
+  .highlight-text {
+    color: #ec1c24;
+  }
+  
+  .hightlight-contact-info {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  
+  .highlight-text-grey {
+    font-weight: 500;
+  }
+  
+  .email-info {
+      margin-top: 20px;
+  }
+  
+  ::-webkit-input-placeholder { /* Chrome */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .required-input {
+    color: black;
+  }
+  @media (min-width: 600px) {
+    .contain {
+      padding: 0;
+    }
+  }
+  
+  h3,
+  ul {
+    margin: 0;
+  }
+  
+  h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .form-input:focus,
+  textarea:focus{
+    outline: 1.5px solid #ec1c24;
+  }
+  
+  .form-input,
+  textarea {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+  }
+  
+  .wrapper > * {
+    padding: 1em;
+  }
+  @media (min-width: 700px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    .wrapper > * {
+      padding: 2em 2em;
+    }
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contacts {
+    color: #212d31;
+  }
+  
+  .form {
+    background: #fff;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  form label {
+    display: block;
+  }
+  form p {
+    margin: 0;
+  }
+  
+  .full-width {
+    grid-column: 1 / 3;
+  }
+  
+  button,
+  .submit-btn,
+  .form-input,
+  textarea {
+    padding: 1em;
+  }
+  
+  button, .submit-btn {
+    background: transparent;
+    border: 1px solid #ec1c24;
+    color: #ec1c24;
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+  }
+  button:hover, .submit-btn:hover,
+  button:focus , .submit-btn:focus{
+    background: #ec1c24;
+    outline: 0;
+    color: #eee;
+  }
+  .error {
+    color: #ec1c24;
+  }
