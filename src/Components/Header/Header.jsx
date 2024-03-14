@@ -10,6 +10,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false)
+  const closeMenu = () => setShowMenu(false)
 
   return (
     <div className='header-main' id='head'>
@@ -27,14 +28,14 @@ function Header() {
       </div>
       <div className="header-botoom">
         <div className={showMenu ? 'hamberger' : "header-bottom-nav"} id='navlinks'>
-          <MDBIcon fas icon="bars" className='menu-icon' onClick={() => setShowMenu(!showMenu)} />
+          <MDBIcon fas icon="bars" className='menu-icon' onClick={() => setShowMenu(!showMenu)}  />
           <ul className={showMenu ? 'show' : ''}>
-            <NavLink to={'/'}><li><a href="">Home</a></li></NavLink>
-            <NavLink to={'/introduction'}><li><a href="">Introduction</a></li></NavLink>
-            <NavLink to={'/Services'}> <li><a href="">Our services</a></li></NavLink>
-            <NavLink to={'/TechnicalCapabalities'}> <li><a href="">Technical Capabilities</a></li></NavLink>
-            <NavLink to={'/ProjectGovernance'}> <li><a href="">Project Governance</a></li></NavLink>
-            <NavLink to={'/Contact'}> <li><a href="">Contact</a></li></NavLink>
+            <NavLink to={'/'}><li onClick={closeMenu}><a href="">Home</a></li></NavLink>
+            <NavLink to={'/introduction'}><li onClick={closeMenu}><a href="">Introduction</a></li></NavLink>
+            <NavLink to={'/Services'}> <li onClick={closeMenu}><a href="">Our services</a></li></NavLink>
+            <NavLink to={'/TechnicalCapabalities'}> <li onClick={closeMenu}><a href="">Technical Capabilities</a></li></NavLink>
+            <NavLink to={'/ProjectGovernance'}> <li onClick={closeMenu}><a href="">Project Governance</a></li></NavLink>
+            <NavLink to={'/Contact'}> <li onClick={closeMenu}><a href="">Contact</a></li></NavLink>
           </ul>
         </div>
       </div>

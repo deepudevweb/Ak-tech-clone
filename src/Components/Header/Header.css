@@ -9,7 +9,7 @@
     box-sizing: border-box;
     width: 100%;
     background-color: rgb(75, 48, 44);
-    transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out linear;
 
 }
 
